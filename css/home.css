@@ -20,6 +20,7 @@
     padding: 20px;
     margin-bottom: 5px;
     display: inline-block;
+    opacity: 1;
 }
 
 .leftsidenav li {
@@ -55,4 +56,24 @@
 @media screen and (max-height: 450px) {
     .leftsidenav {padding-top: 15px;}
     .leftsidenav a {font-size: 18px;}
-  }
+}
+
+input[type=text], input[type=submit] {
+    width: 95%;
+    padding: 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid grey;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+input[type=submit] {
+    background-color:gray;
+    color: white;
+    border: none;
+}
+
+input[type=submit]:hover {
+    opacity: 0.8;
+}
