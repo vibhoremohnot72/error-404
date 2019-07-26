@@ -1,0 +1,29 @@
+.leftsidenav {
+    height: 1080px;
+    width: 260px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: black;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.leftsidenav a {
+    padding: 6px 8px 6px 16px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+    color: white;
+    display: block;
+    text-decoration: underline;
+}
+
+.leftsidenav a:hover {
+    color: lightseagreen;
+}
+
+@media screen and (max-height: 450px) {
+    .leftsidenav {padding-top: 15px;}
+    .leftsidenav a {font-size: 18px;}
+  }
