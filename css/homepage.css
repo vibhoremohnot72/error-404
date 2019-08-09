@@ -28,28 +28,26 @@
 
 /*DROPDOWN HOVER STARTS HERE*/
 
-.dropdown:hover .dropdown-menu {
+.dropdown:hover > .dropdown-menu {
     display: block;
-    margin-top: 0;
 }
 
-.dropdown-submenu {
-    position: relative;
+/*takes our submenus out of the document flow*/
+#navbar .dropdown-submenu {
+    position: absolute;
 }
 
-.dropdown-submenu> a:after {
+/*float our subment to the right*/
+#navbar .dropdown-submenu > a:after {
     float: right;
 }
 
-.dropdown-submenu>.dropdown-menu {
+/*set our positioning accordingly for submenus*/
+#navbar .dropdown-submenu {
     top: 0;
     left: 100%;
     margin-top: 0px;
     margin-left: 0px;
-}
-
-.dropdown-submenu:hover>.dropdown-menu {
-    display: block;
 }
 
 /*DROPDOWN HOVER ENDS HERE*/

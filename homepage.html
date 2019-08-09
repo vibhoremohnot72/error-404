@@ -7,15 +7,16 @@
         <meta name="description" content="This is the home page of Error-404 blogs. Here we talk about everything, ranging from tech to flora and fauna. Enjoy reading some amateur blogs.">
         <meta name="keywords" content="Error-404, Blogs, error-404 blogs, error 404 blogs, homepage, error-404 website">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="css/homepage.css">
+        <!--VENDOR STYLES STARTS HERE-->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-dropdown/2.0.3/jquery.dropdown.min.js"></script>
         <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css" rel="stylesheet">
-        <script src="javascript/homepage.js"></script>
+        <!--VENDOR STYLES ENDS HERE-->
+        <!--CUSTOM STYLE CSS STARTS HERE-->
+        <link rel="stylesheet" type="text/css" href="css/homepage.css">
+        <!--CUSTOM STYLE CSS ENDS HERE-->
+        <!--JQUERY STARTS HERE-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <!--JQUERY ENDS HERE-->
     </head>
     <body>
         <!--NavBar Starts Here-->
@@ -37,24 +38,35 @@
                 </li>
                 <!--DROPDOWN CODE STARTS HERE-->
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Blogs
-                    </a>
-                   <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
-                       <li class="dropdown-submenu">
-                           <a class="dropdown-item" tabindex="-1" href="#">
-                               Flora and Fauna
-                           </a>
-                           <ul class="dropdown-menu">
-                               <li><a class="dropdown-item" href="#">Flora</a></li>
-                           </ul>
-                       </li>
-                   </ul>
-                </li> 
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blogs</a>
+                    <!--MAIN NAV DROPDOWN STARTS HERE-->
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                        <li class="dropdown">
+                            <a class="dropdown-item" tabindex="-1" href="#">
+                                Flora and Fauna
+                            </a>
+                            <!--FLORA AND FAUNA NAV DROPDOWN STARTS HERE-->
+                            <ul class="dropdown-menu dropdown-submenu">
+                                <li><a class="dropdown-item" href="#">Plants</a></li>
+                                <li><a class="dropdown-item" href="#">Animals</a></li>
+                            </ul>
+                            <!--FLORA AND FAUNA NAV DROPDOWN ENDS HERE-->
+                        </li>
+                    </ul>
+                    <!--MAIN NAV DROPDOWN ENDS HERE-->
+                </li>
                 <!--DROPDOWN CODE ENDS HERE-->
             </ul>
         </nav>
 
         <!--NavBar Ends Here-->
+
+        <footer>
+            <!--VENDOR SCRIPTS STARTS HERE-->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+            <!--VENDOR SCRIPTS ENDS HERE-->
+
+        </footer>
     </body>
 </html>
