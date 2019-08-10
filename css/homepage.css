@@ -40,6 +40,9 @@
 .nav-link {
     font-size: 25px;
 }
+.form-inline {
+    float: right;
+}
 /*NavBar Style Ends Here*/
 
 /*DROPDOWN HOVER STARTS HERE*/
